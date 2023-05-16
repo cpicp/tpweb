@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<title> CAMPEONES DEL MUNDO </title>
+
+   <!-- Favicons -->
+   <link rel="icon" 
+   type="image/x-icon"
+   href="Favicon/favicon.ico">
+
+   <!-- STYLE CSS -->
+
+   
+<style>
+    body {
+        margin: 0px;
+        background-color: rgb(176, 207, 236);
+    }
+
+  /* MENU DE NAVEGACIÓN */
+    
+  #navegacion ul {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.3rem 3rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+    
+    #navegacion li, 
+    #pie li {
+        list-style: none;
+        float: left; 
+        width: auto;
+        margin: 12px 15px 0 0;
+        font-weight: 600;
+     }
+
+      .menu-hamburguesa {
+      color: var beige;
+      font-size: 2rem;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      display: none;
+      }
+      .menu-hamburguesa {
+      display: block;
+      }
+
+
+    a {
+        text-decoration: none;
+        color: #02175a;
+        padding: 4px;
+    }
+.navi:hover{
+        background-color: #3e7b94;
+    }
+
+    #cabecera {
+      width: 100%;
+      height: 400px;
+      background-image: url('inicio/argcampeondelmundo.jpg');
+      background-size: 100% 600px;
+      margin: 10px 0px;
+      border-radius: 30px;
+      box-shadow: 0px 2px 15px 2px var black;
+    
+    }
+
+    h1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center ;
+      color: rgb(6, 6, 7);
+    }
+
+    #inicio {
+    width: 955px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    }
+
+     
+    /* CUERPO */
+  
+  
+#cuerpo {
+    width: 955px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .cuerpop{
+   width: 100%;
+}
+  .partes {
+    width: 200px;
+    height: 450px;
+    margin: 10px auto;
+    padding: 8px;
+    overflow: hidden;
+  }
+  
+  .cuadrado {
+    width: 200px;
+    height: 100px;
+    border-style: 10;
+    box-shadow: 1px 5px 2px #999;
+    border-radius: 150px; 
+    -webkit-border-radius: 150px; 
+    -moz-border-radius: 150px; 
+    float: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(242, 242, 247);
+    border: beige  10px;
+    background-color: rgb(111, 172, 221);
+    
+  }
+
+  p {
+    color: #555;
+    text-align: center;    
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  h4 {
+  text-align: center;  
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.boton:hover{
+       border: 1px ridge rgb(176, 207, 236);
+       border-radius: 150px; 
+       background-color: rgb(176, 207, 236);   
+  }
+
+  /* FOOTER */
+
+  #pie {
+    width: 100%;
+    height: 40px;
+    background-color: #0a89df;
+    text-align: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 2px;
+  }
+
+</style>
+
+</head>
+<body>
+
+    <!-- MENU DE NAVEGACIÓN -->
+
+  <section id="navegacion">
+      <ul> 
+        <li><a href="index.html" class="navi">Inicio</a></li>
+        <li><a href="Jugadores y Técnico.html" class="navi">Selección</a></li>
+        <li><a href="Fixture.html" class="navi">Partidos</a></li>
+        <li><a href="Festejos.html" class="navi">Festejo</a></li>
+      </ul>
+    <button class="menu-hamburguesa" id="menu-hamburguesa">
+       <ion-icon class="barras" name="menu-outline"></ion-icon>
+    </button>
+    
+  </section>  
+
+<!-- Primera página de inicio -->
+   <section id="inicio">
+    <div id="cabecera"></div>
+        <h1><b> CAMPEONES DEL MUNDO</b></h1>
+        <h3> Ganamos la Tercera </h3>
+        <p>El 18 de Diciembre de 2022, la selección Argentina de futból, se consagro por tercera vez campeona del mundo en Qatar </br> 
+            El partido final se jugo en el estadio Lusail Iconic, contra el último campeón Francia.
+        </p>
+  
+    </section>
+
+
+ <!-- Seccion de link hacia otras páginas -->
+
+     <section id="cuerpo">
+        <p class="cuerpop">Te invitamos a disfrutar de esta fecha inolvidable con nosotros en donde te contamos de: </p>
+       
+        <div class="partes">
+            <a href="Jugadores y Técnico.html" div class="boton">
+              <img src="inicio/seleccion.jpg" class="cuadrado">
+            </a>
+            <h4>Jugares seleccionados y Director técnico</h4>
+            <p>Recordá cada jugador que fue seleccionado para Qatar 2022 por su DT, el gran Scaloni</p>
+        </div>
+        <div class="partes">
+            <a href="Fixture.html" div class="boton">
+              <img src="inicio/fixture.jpg" class="cuadrado">
+            </a>
+            <h4>Partidos Jugados</h4>
+            <p>Aca vas a ver los partidos jugados de principio a fin, con sus resultados</p>
+        </div>
+        <div class="partes"> 
+            <a href="Festejos.html" div class="boton">
+              <img src="inicio/festejos.jpg" class="cuadrado">
+            </a>
+            <h4>Festejos en Argentina </h4>
+            <p>Una vez que ganamos la tercera.. Argentina no paro de celebrar! Mira un poco de lo ocurrido en esa fecha</p>
+        </div>
+        
+    </section>
+
+
+<!-- FOOTER -->
+
+
+<section id="pie">
+    <ul>
+      <li><b>©</b>Copyright</li>
+      <li>Autores: Digangi y Sepe </li>
+      <li class="redessociales">
+        <a href="https://twitter.com/afa" target="_blank" class="twitter"><img src="icored/twittwer.png" height="20px" width="20px"></a>
+        <a href="https://www.instagram.com/afaseleccion/" target="_blank" class="instagram"><img src="icored/instagram.png" height="20px" width="20px"></a>
+        <a href="https://www.facebook.com/AFASeleccionArgentina" target="_blank" class="facebook"><img src="icored/facebook.png" height="20px" width="20px"></a>
+      </li>
+    </ul>
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<title>FESTEJO </title>
+
+
+   <!-- Favicons -->
+   <link rel="icon" 
+   type="image/x-icon" 
+   href="Favicon/favicon.ico">
+
+<style>
+  body {
+      margin: 0px;
+      background-color: rgb(176, 207, 236);
+  }
+
+/* MENU DE NAVEGACIÓN */
+  
+#navegacion ul {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.3rem 3rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  font-family:Arial, Helvetica, sans-serif;
+}
+  
+  #navegacion li, 
+  #pie li {
+      list-style: none;
+      float: left; 
+      width: auto;
+      margin: 12px 15px 0 0;
+      font-weight: 600;
+   }
+
+    .menu-hamburguesa {
+    color: var beige;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    }
+    .menu-hamburguesa {
+    display: block;
+    }
+
+
+  a {
+      text-decoration: none;
+      color: #02175a;
+      padding: 4px;
+  }
+.navi:hover{
+      background-color: #3e7b94;
+  }
+
+  #cabecera {
+    width: 100%;
+    height: 400px;
+    background-image: url('inicio/argcampeondelmundo.jpg');
+    background-size: 100% 600px;
+    margin: 10px 0px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 15px 2px var black;
+  
+  }
+
+  h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center ;
+    color: rgb(6, 6, 7);
+  }
+
+  p {
+    color: #555;
+    text-align: center;    
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  #inicio {
+  width: 955px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+
+  }
+
+
+  /* CUERPO */
+  #cuerpo {
+    width: 955px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h3 {
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(242, 242, 247);
+    border: beige  10px;   
+  }
+  p {
+    color: #000000;
+    text-align: center;
+   
+  }
+  .boton{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+
+  /*INICIO SLIDE*/
+
+  *{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+#slide img,
+#slide2 img,
+#slide3 img,
+#slide4 img,
+#slide5 img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.festejos2{
+	display: flex;
+  margin-left: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.festejos2 h3{
+  color: rgb(20, 194, 247);
+  padding: 5px;
+  text-shadow: 2px 2px 2px #0a8adf65; 
+}
+
+#slide,
+#slide2,
+#slide3,
+#slide4,
+#slide5{
+	position: relative;
+	margin: auto;
+	width: 550px;
+	height: 290px;
+	flex-wrap: wrap;
+	justify-content: right;
+}
+#slide ul,
+#slide2 ul,
+#slide3 ul,
+#slide4 ul,
+#slide5 ul{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 550px;
+	height: 315px;
+	background: url('festejos/obeliscoprin.jpg');
+	background-size: 550px 315px;
+}
+#slide2 ul{
+	background: url('festejos/monumentoalabandera.jpg');
+	background-size: cover;
+}
+#slide3 ul{
+	background: url('festejos/fuenteolmos.jpg');
+	background-size: cover;
+}
+#slide4 ul{
+	background: url('festejos/mardelplata.jpg');
+	background-size: cover;
+}
+#slide5 ul{
+	background: url('festejos/posadasmi.jpg');
+	background-size: cover;
+}
+
+#slide ul li img,
+#slide2 ul li img,
+#slide3 ul li img,
+#slide4 ul li img,
+#slide5 ul li img{
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	transition: opacity 1s ease-out;
+}
+
+#slide ul li label,
+#slide2 ul li label,
+#slide3 ul li label,
+#slide4 ul li label,
+#slide5 ul li label{
+	position: relative;
+	z-index: 3;
+	width: 8px;
+	top: 315px;
+	left: 250px;
+	float: left;
+	height: 10px;
+	margin: 0px 2px;
+	background-color: darkblue;
+	border: 3px solid black;
+	cursor: pointer;
+	border-radius: 100%;
+  text-align: justify;
+}
+#slide ul li label:hover,
+#slide2 ul li label:hover,
+#slide3 ul li label:hover,
+#slide4 ul li label:hover,
+#slide5 ul li label:hover{
+	background-color: lightcyan;
+}
+
+#slide ul li label:active,
+#slide2 ul li label:active,
+#slide3 ul li label:active,
+#slide4 ul li label:active,
+#slide5 ul li label:active{
+	background-color: darkmagenta;
+}
+#slide ul li input,
+#slide2 ul li input,
+#slide3 ul li input,
+#slide4 ul li input,
+#slide5 ul li input{
+	display: none;
+}
+
+#botoneraSlide,
+#botoneraSlide2,
+#botoneraSlide3,
+#botoneraSlide4,
+#botoneraSlide5{
+	position: relative;
+	margin-left: 500px;
+	width: 550px;
+	height: 20px;
+	background-image: url('festejos/backBotonesSlide.jpg');
+}
+
+
+
+#slide ul li input#boton-1:checked ~ #foto01,#slide ul li input#boton-2:checked ~ #foto02,#slide ul li input#boton-3:checked ~ #foto03,#slide ul li input#boton-4:checked ~ #foto04,#slide ul li input#boton-5:checked ~ #foto05{
+	opacity: 1;
+}
+
+#slide ul li input#boton-1:checked ~ label,#slide ul li input#boton-2:checked ~ label,#slide ul li input#boton-3:checked ~ label,#slide ul li input#boton-4:checked ~ label,#slide ul li input#boton-5:checked ~ label{
+	background-color: limegreen;
+}
+
+#slide2 ul li input#boton-21:checked ~ #foto21,#slide2 ul li input#boton-22:checked ~ #foto22,#slide2 ul li input#boton-23:checked ~ #foto23,#slide2 ul li input#boton-24:checked ~ #foto24,#slide2 ul li input#boton-25:checked ~ #foto25{
+	opacity: 1;
+}
+
+#slide2 ul li input#boton-21:checked ~ label,#slide2 ul li input#boton-22:checked ~ label,#slide2 ul li input#boton-23:checked ~ label,#slide2 ul li input#boton-24:checked ~ label,#slide2 ul li input#boton-25:checked ~ label{
+	background-color: limegreen;
+}
+
+#slide3 ul li input#boton-31:checked ~ #foto31,#slide3 ul li input#boton-32:checked ~ #foto32,#slide3 ul li input#boton-33:checked ~ #foto33{
+	opacity: 1;
+}
+
+#slide3 ul li input#boton-31:checked ~ label,#slide3 ul li input#boton-32:checked ~ label,#slide3 ul li input#boton-33:checked ~ label{
+	background-color: limegreen;
+}
+
+#slide4 ul li input#boton-41:checked ~ #foto41,#slide4 ul li input#boton-42:checked ~ #foto42,#slide4 ul li input#boton-43:checked ~ #foto43{
+	opacity: 1;
+}
+
+#slide4 ul li input#boton-41:checked ~ label,#slide4 ul li input#boton-42:checked ~ label,#slide4 ul li input#boton-43:checked ~ label{
+	background-color: limegreen;
+}
+
+#slide5 ul li input#boton-51:checked ~ #foto51,#slide5 ul li input#boton-52:checked ~ #foto52{
+	opacity: 1;
+}
+
+#slide5 ul li input#boton-51:checked ~ label,#slide5 ul li input#boton-52:checked ~ label{
+	background-color: limegreen;
+}
+
+/* FIN SLIDE*/
+
+ /* FOOTER */
+
+ #pie {
+    width: 100%;
+    height: 40px;
+    background-color: #0a89df;
+    text-align: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 2px;
+  }
+
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- MENU DE NAVEGACIÓN -->
+
+    <section id="navegacion">
+      <ul> 
+        <li><a href="index.html" class="navi">Inicio</a></li>
+        <li><a href="Jugadores y Técnico.html" class="navi">Selección</a></li>
+        <li><a href="Fixture.html" class="navi">Partidos</a></li>
+        <li><a href="Festejos.html" class="navi">Festejo</a></li>
+      </ul>
+    <button class="menu-hamburguesa" id="menu-hamburguesa">
+       <ion-icon class="barras" name="menu-outline"></ion-icon>
+    </button>
+    
+  </section>  
+
+<!-- Primera página de inicio -->
+   <section id="inicio">
+    <div id="cabecera"></div>
+        <h1> FESTEJOS EN ARGENTINA </h1>
+        <p>El mismo 18 de Diciembre de 2022, la la población no pudo aguantar la emoción </br> de haber ganado despues de 36 años la Copa del Mundo. </br> 
+          Por ese motivo, la gente empezo a concentrarse en los centros o monumentos mas importantes de su zona. <br/>
+          El de mayor concentración fue el Obelisco de la Ciudad de Buenos Aires, como epicentro de festejos.<BR/>
+          Pero la fiesta se sintió en todo el país, con la misma alegria e intensidad. 
+       </p>
+    </section>
+
+    <!--SLIDE -->
+    <section class="festejos2">
+      <div class="festejoobelisco"  >
+         <h3>OBELISCO</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7810.676954950414!2d-58.38030991367158!3d-34.604537622500615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1683251102119!5m2!1ses!2sar" width="500px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+       </div>
+       <div id="slide" >    
+         <ul>
+           <li>
+              <input type="radio" id="boton-1" name="in">
+              <label for="boton-1"></label>
+              <img src="festejos/obelisco1.webp" width="100%" id="foto01">
+           </li>
+           <li>
+              <input type="radio" id="boton-2" name="in">
+              <label for="boton-2"></label>
+              <img src="festejos/obelisco2.webp" width="100%" id="foto02">
+           </li>
+           <li>
+             <input type="radio" id="boton-3" name="in">
+             <label for="boton-3"></label>
+             <img src="festejos/obelisco3.jpg" width="100%" id="foto03">
+           </li>
+           <li>
+             <input type="radio" id="boton-4" name="in">
+             <label for="boton-4"></label>
+             <img src="festejos/obelisco4.jpg" width="100%" id="foto04">
+           </li>
+         </ul> 
+       </div>
+       <div id="botoneraSlide">
+     
+       </div>    
+     </section>
+    </ul>
+  </section>
+  
+   <!--SLIDE 2 -->
+  <section class="festejos2">
+    <div class="monumentofestejo"  >
+       <h3>MONUMENTO A LA BANDERA</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3348.1250138840956!2d-60.63304072509761!3d-32.947708671940774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1683581043373!5m2!1ses!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+     <div id="slide2" >    
+       <ul>
+         <li>
+           <input type="radio" id="boton-21" name="in">
+           <label for="boton-21"></label>
+           <img src="festejos/monumento1.jpg" width="100%" id="foto21">
+         </li>
+         <li>
+            <input type="radio" id="boton-22" name="in">
+            <label for="boton-22"></label>
+            <img src="festejos/monumento2.jpg" width="100%" id="foto22">
+         </li>
+         
+         <li>
+            <input type="radio" id="boton-23" name="in">
+            <label for="boton-23"></label>
+            <img src="festejos/monumento3.webp" width='100%' height="100%" id="foto23">
+         </li>
+         
+       </ul> 
+     </div>
+     <div id="botoneraSlide2"></div>    
+   </section>
+
+    <!--SLIDE 3 -->
+   <section class="festejos2">
+    <div class="festejocordoba"  >
+       <h3>CORDOBA</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1959.2626183973825!2d-64.18781094412941!3d-31.42023060016679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1682709161066!5m2!1ses!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+     <div id="slide3" >    
+       <ul>
+         <li>
+           <input type="radio" id="boton-31" name="in">
+           <label for="boton-31"></label>
+           <img src="festejos/cordoba1.webp" width="100%" id="foto31">
+         </li>
+         <li>
+            <input type="radio" id="boton-32" name="in">
+            <label for="boton-32"></label>
+            <img src="festejos/cordoba2.jpg" width="100%" id="foto32">
+         </li>
+         
+         <li>
+            <input type="radio" id="boton-33" name="in">
+            <label for="boton-33"></label>
+            <img src="festejos/cordoba3.jpg" width='100%' height="100%" id="foto33">
+         </li>
+       </ul> 
+     </div>
+     <div id="botoneraSlide3"></div>    
+   </section>
+
+   
+    <!--SLIDE 4 -->
+    <section class="festejos2">
+      <div class="festejomdp"  >
+         <h3>MAR DEL PLATA</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3617.2548382588416!2d-57.5265525640188!3d-38.02362256044448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1682709291911!5m2!1ses!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+       <div id="slide4" >    
+         <ul>
+           <li>
+             <input type="radio" id="boton-41" name="in">
+             <label for="boton-41"></label>
+             <img src="festejos/mdq1.jpeg" width="100%" id="foto41">
+           </li>
+           <li>
+              <input type="radio" id="boton-42" name="in">
+              <label for="boton-42"></label>
+              <img src="festejos/mdq2.jpg" width="100%" id="foto42">
+           </li>
+           <li>
+              <input type="radio" id="boton-43" name="in">
+              <label for="boton-43"></label>
+              <img src="festejos/mdq3.jpg" width='100%' height="100%" id="foto43">
+           </li>
+         </ul> 
+       </div>
+       <div id="botoneraSlide4"></div>    
+     </section>
+
+      <!--SLIDE 5 -->
+    <section class="festejos2">
+      <div class="festejomisiones"  >
+         <h3>MISIONES</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4078.3713273842195!2d-55.89228988221887!3d-27.354860685161015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1682709552009!5m2!1ses!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+       <div id="slide5" >    
+         <ul>
+           <li>
+             <input type="radio" id="boton-51" name="in">
+             <label for="boton-51"></label>
+             <img src="festejos/misiones1.jpg" width="100%" id="foto51">
+           </li>
+           <li>
+              <input type="radio" id="boton-52" name="in">
+              <label for="boton-52"></label>
+              <img src="festejos/misiones2.jpg" width="100%" id="foto52">
+           </li>
+         </ul> 
+       </div>
+       <div id="botoneraSlide5"></div>    
+     </section>
+
+<!-- FOOTER -->
+<section id="pie">
+  <ul>
+    <li><b>©</b>Copyright</li>
+    <li>Autores: Digangi y Sepe </li>
+    <li class="redessociales">
+      <a href="https://twitter.com/afa" target="_blank" class="twitter"><img src="icored/twittwer.png" height="20px" width="20px"></a>
+      <a href="https://www.instagram.com/afaseleccion/" target="_blank" class="instagram"><img src="icored/instagram.png" height="20px" width="20px"></a>
+      <a href="https://www.facebook.com/AFASeleccionArgentina" target="_blank" class="facebook"><img src="icored/facebook.png" height="20px" width="20px"></a>
+    </li>
+  </ul>
+</section>
+  </body>
+      
+  
+  </html>
+  
+<!-- FOOTER -->
+
+  

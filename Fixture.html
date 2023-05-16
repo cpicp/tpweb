@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <title>PARTIDOS</title>
+      
+
+   <!-- Favicons -->
+   <link rel="icon" 
+   type="image/x-icon"
+   href="Favicon/favicon.ico">
+
+<style>
+body {
+        margin: 0px;
+        background-color: rgb(176, 207, 236);
+    }
+
+  /* MENU DE NAVEGACIÓN */
+    
+  #navegacion ul {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.3rem 3rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+    
+    #navegacion li, 
+    #pie li {
+        list-style: none;
+        float: left; 
+        width: auto;
+        margin: 12px 15px 0 0;
+        font-weight: 600;
+     }
+
+      .menu-hamburguesa {
+      color: var beige;
+      font-size: 2rem;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      display: none;
+      }
+      .menu-hamburguesa {
+      display: block;
+      }
+
+
+    a {
+        text-decoration: none;
+        color: #02175a;
+        padding: 4px;
+    }
+.navi:hover{
+        background-color: #3e7b94;
+    }
+
+    #cabecera {
+      width: 100%;
+      height: 400px;
+      background-image: url('inicio/argcampeondelmundo.jpg');
+      background-size: 100% 600px;
+      margin: 10px 0px;
+      border-radius: 30px;
+      box-shadow: 0px 2px 15px 2px var black;
+    
+    }
+
+    h1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center ;
+      color: rgb(6, 6, 7);
+    }  
+      
+    p {
+      color: #555;
+      text-align: center;    
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #inicio {
+    width: 955px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    }
+
+  /* CUERPO */
+  #cuerpo {
+    width: 955px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  h2{
+    text-align: center;  
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(94, 20, 230);
+  }
+  h3 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+ 
+  
+  .boton{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+  #penales{
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+  }
+  #fecha{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+  }
+#estadio{
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(138, 138, 138);
+}
+#penales1{
+    color: rgba(182, 0, 0, 0.945);
+    font-size: 14px;
+  }
+  #fecha1{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #615959;
+  }
+#estadio1{
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(104, 88, 88);
+}
+  
+  /* FASE  */
+
+  .fase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 65rem;
+    margin: auto;
+    padding: 1rem;
+    border-style: 10;
+    box-shadow: 1px 5px 2px #999;
+    border-radius: 150px; 
+    -webkit-border-radius: 150px; 
+    -moz-border-radius: 150px; 
+    float: center;
+  }
+
+  .final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 65rem;
+    margin: auto;
+    padding: 1rem;
+    border-style: 10;
+    box-shadow: 1px 5px 2px #999;
+    border-radius: 150px; 
+    -webkit-border-radius: 150px; 
+    -moz-border-radius: 150px; 
+    float: center;
+    background-color: #0a8adfc9;
+    color:rgb(6, 6, 7) IMPORTANT!
+  }
+
+
+  /* FOOTER */
+
+  #pie {
+    width: 100%;
+    height: 40px;
+    background-color: #0a89df;
+    text-align: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 2px;
+  }
+
+</style>
+
+</head>
+<body>
+
+    <!-- MENU DE NAVEGACIÓN -->
+
+    <section id="navegacion">
+      <ul> 
+        <li><a href="index.html" class="navi">Inicio</a></li>
+        <li><a href="Jugadores y Técnico.html" class="navi">Selección</a></li>
+        <li><a href="Fixture.html" class="navi">Partidos</a></li>
+        <li><a href="Festejos.html" class="navi">Festejo</a></li>
+      </ul>
+    <button class="menu-hamburguesa" id="menu-hamburguesa">
+       <ion-icon class="barras" name="menu-outline"></ion-icon>
+    </button>
+    
+  </section>  
+
+<!-- Pagina de Fixture-->
+   <section id="inicio">
+    <div id="cabecera"></div>
+        <h1>PARTIDOS JUGADOS</h1>
+        <p>Despues de un duro comienzo, en lo que parecia que todo iba cuesta arriba, Argentina logro afianzar su juego.<br/>
+           Con la perdida del primer partido ante Arabia Saudita, por 2 a 1, Argentina tenia que enfrentar dos rivales duros para poder abrirse paso a los octavos de final.</p>
+    </section>
+
+    <section id="cuerpo">
+   
+    
+
+      <div class="fase">
+      <h3> Fase de Grupos </h3>
+      <section><img src="paisico/argesc.png"width="25px" height="25px"> ARG 1 - 2 ARA <img src="paisico/araesc.png"width="25px" height="25px">
+      <p id="fecha">Martes 22/11/22</p>
+      <p id="estadio">Lusail Iconic Stadium</p> </section>
+      <section><img src="paisico/argesc.png"width="25px" height="25px"> ARG 2 - 0 MEX <img src="paisico/mexesc.png"width="25px" height="25px"> 
+        <p id="fecha">Sabado 26/11/22</p>
+        <p id="estadio">Lusail Iconic Stadium</p></section>
+      <section>  <img src="paisico/argesc.png"width="25px" height="25px"> ARG 2 - 0 POL <img src="paisico/polesc.png"width="25px" height="25px">
+        <p id="fecha">Miercoles 30/11/22</p>
+        <p id="estadio"> Stadium 974</p></section>
+     
+   
+      
+      </div>
+      <div class="fase">
+        <section><h3> Octavos de Final </h3>
+        <p><img src="paisico/argesc.png"width="25px" height="25px"> ARG 2 - 1 AUS <img src="paisico/ausesc.png"width="25px" height="25px"></P>
+        <p id="fecha">Sabado 03/12/22</p>
+        <p id="estadio">Ahmad bin Ali Stadium</p></section>
+        <section>  <h3> Cuartos de Final </h3>
+        <p><img src="paisico/argesc.png"width="25px" height="25px"> ARG 2<a id="penales">4</a> - <a id="penales">3</a>2 HOL <img src="paisico/holesc.png"width="25px" height="25px"></p>
+         <p id="fecha">Viernes 09/12/22</p>
+        <p id="estadio"> Lusail Iconic Stadium</p></section>
+        <section>
+        <h3> Semifinal </h3>
+        <p><img src="paisico/argesc.png"width="25px" height="25px"> ARG 3 - 0 CRO <img src="paisico/croesc.png"width="25px" height="25px"></p>
+        <p id="fecha">Martes 13/12/22</p>
+        <p id="estadio"> Lusail Iconic Stadium</p>
+      </section></div>
+
+      <div class="final">
+      <h2> FINAL</h2>
+      <p><img src="paisico/argesc.png"width="25px" height="25px"> ARG 3<a id="penales1">4</a> - <a id="penales1">2</a>3 FRA <img src="paisico/fraesc.png"width="25px" height="25px"></p><br/>
+      <p id="fecha1">Domingo 18/12/22</p><br/>
+      <p id="estadio1"> Lusail Iconic Stadium</p>
+    </div>
+ 
+    </section>
+
+<!-- FOOTER -->
+<section id="pie">
+  <ul>
+    <li><b>©</b>Copyright</li>
+    <li>Autores: Digangi y Sepe </li>
+    <li class="redessociales">
+      <a href="https://twitter.com/afa" target="_blank" class="twitter"><img src="icored/twittwer.png" height="20px" width="20px"></a>
+      <a href="https://www.instagram.com/afaseleccion/" target="_blank" class="instagram"><img src="icored/instagram.png" height="20px" width="20px"></a>
+      <a href="https://www.facebook.com/AFASeleccionArgentina" target="_blank" class="facebook"><img src="icored/facebook.png" height="20px" width="20px"></a>
+    </li>
+  </ul>
+</section>
+
+</body>
+
+
+
+
+
+</html>

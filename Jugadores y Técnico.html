@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<title> PLANTEL</title>
+
+
+   <!-- Favicons -->
+   <link rel="icon" 
+   type="image/x-icon"
+   href="Favicon/favicon.ico">
+
+
+<style>
+body {
+        margin: 0px;
+        background-color: rgb(176, 207, 236);
+    }
+
+  /* MENU DE NAVEGACIÓN */
+    
+  #navegacion ul {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.3rem 3rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+    
+    #navegacion li, 
+    #pie li {
+        list-style: none;
+        float: left; 
+        width: auto;
+        margin: 12px 15px 0 0;
+        font-weight: 600;
+     }
+
+      .menu-hamburguesa {
+      color: var beige;
+      font-size: 2rem;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      display: none;
+      }
+      .menu-hamburguesa {
+      display: block;
+      }
+
+
+    a {
+        text-decoration: none;
+        color: #02175a;
+        padding: 4px;
+    }
+.navi:hover{
+        background-color: #3e7b94;
+    }
+
+    #cabecera {
+      width: 100%;
+      height: 400px;
+      background-image: url('inicio/argcampeondelmundo.jpg');
+      background-size: 100% 600px;
+      margin: 10px 0px;
+      border-radius: 30px;
+      box-shadow: 0px 2px 15px 2px var black;
+    
+    }
+
+   h1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center ;
+      color: rgb(6, 6, 7);
+      font-weight: 500;
+      font-size: 40px;
+    }
+        
+    p {
+    color: #555;
+    text-align: center;    
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+    #inicio {
+    width: 955px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    }
+
+  /* CUERPO */
+  #cuerpo {
+    width: 955px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    text-align: left;
+    color: rgba(13, 175, 240, 0.774);
+  }
+  
+  .boton{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+
+  #cuerpo, b {
+    color: #2b0c9c;    
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  #cuerpo, h3 {
+   color: #050303;    
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #2b0c9c;
+    font-weight: 900;
+  }
+  .fotonomequi{
+    padding: 0 50px 0 0;
+  }
+  #fotoid{
+    width: 50px;
+    height: 50px;
+  }
+  #equipo{
+    width: 20px;
+    height: 20px;
+  }
+  .items{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+  }
+  a{
+    color: #555;
+  }
+  #nombreju{
+    color: #050303;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+  }
+ 
+  #icoequipo{
+    font-size: 10px;
+  }
+  .edad{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* FOOTER */
+
+  #pie {
+    width: 100%;
+    height: 40px;
+    background-color: #0a89df;
+    text-align: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 2px;
+  }
+
+</style>
+
+</head>
+<body>
+
+    <!-- MENU DE NAVEGACIÓN -->
+
+  <section id="navegacion">
+      <ul> 
+        <li><a href="index.html" class="navi">Inicio</a></li>
+        <li><a href="Jugadores y Técnico.html" class="navi">Selección</a></li>
+        <li><a href="Fixture.html" class="navi">Partidos</a></li>
+        <li><a href="Festejos.html" class="navi">Festejo</a></li>
+      </ul>
+    <button class="menu-hamburguesa" id="menu-hamburguesa">
+       <ion-icon class="barras" name="menu-outline"></ion-icon>
+    </button>
+    
+  </section>  
+
+<!-- Pagina de Equipo -->
+   <section id="inicio">
+    <div id="cabecera"></div>
+        <h1> JUGADORES Y TÉCNICO </h1>
+        <p> Estos son los 26 elegidos que hicieron posible este sueño.</p>
+   </section>
+
+   <body>
+
+    <!--DIRECTOR TECNICO-->  
+        
+        <table class="items">
+            <thead>
+                <tr>
+                    <th colspan="4"><h4>TECNICO </h4></th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/lionels.png" title="scaloni" alt="Lionel Scaloni" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Lionel Scaloni</a><br/>
+                                    <a class="edad">45 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="paisico/argesc.png" title="Argentina" alt="Argentina" id="equipo"></a><br/>
+                        <a id="icoequipo">Argentina</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+       
+    <!--ARQUEROS-->   
+        
+        <table class="items">
+            <thead>
+                <tr>
+                    <th colspan="9"><h4>ARQUEROS</h4></th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/emiliano.png" title="Emiliano Martinez" alt="Emiliano Martinez" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Emiliano Martinez</a><br/>
+                                    <a class="edad">30 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/aston.png" title="Aston Villa" alt="aston villa" id="equipo"></a><br/>
+                        <a id="icoequipo">Aston Villa</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/geronimo.png" title="Gerónimo Rulli" alt="Gerónimo Rulli" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Gerónimo Rulli</a><br/>
+                                    <a class="edad">30 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/villa.png" title="Villarreal" alt="Villarreal" id="equipo"></a><br/>
+                        <a id="icoequipo">Villarreal</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/franco.png" title="Franco Armani" alt="Franco Armani" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Franco Armani</a><br/>
+                                    <a class="edad">36 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/river.png" title="River" alt="River" id="equipo"></a><br/>
+                        <a id="icoequipo">River Plate</a>
+                    </td>
+                </tr>               
+            </tbody>
+        </table>
+        
+    <!--DEFENSA-->
+       
+        <table class="items">
+            <thead>
+                <tr>
+                    <th colspan="100%"><h4>DEFENSORES</h4></th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/nahuel.png" title="Nahuel Molina" alt="Nahuel Molina" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Nahuel Molina</a><br/>
+                                    <a class="edad">24 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/atm.png" title="Atletico de Madrid" alt="Atletico de Madrid" id="equipo"></a><br/>
+                        <a id="icoequipo">Atletico Madrid</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/gonzalo.png" title="Gonzalo Montiel" alt="Gonzalo Montiel" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Gonzalo Montiel</a><br/>
+                                    <a class="edad">25 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/sevilla.png" title="Sevilla" alt="Sevilla" id="equipo"></a><br/>
+                        <a id="icoequipo">Sevilla</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/german.png" title="Germán Pezzella" alt="Germán Pezzella" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Germán Pezzella</a><br/>
+                                    <a class="edad">31 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/betis.png" title="Real Betis" alt="Real Betis" id="equipo"></a><br/>
+                        <a id="icoequipo">Real Betis</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/nicolaso.png" title="Nicolás Otamendi" alt="Nicolás Otamendi" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Nicolás Otamendi</a><br/>
+                                    <a class="edad">34 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/benf.png" title="Benfica" alt="Benfica" id="equipo"></a><br/>
+                        <a id="icoequipo">Benfica</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/lisando.png" title="Lisandro Martinez" alt="Lisandro Martinez" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Lisandro Martinez</a><br/>
+                                    <a class="edad">24 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/mun.png" title="Manchester United" alt="Manchester United" id="equipo"></a><br/>
+                        <a id="icoequipo">Manchester United</a>
+                    </td>
+                </tr>
+                <tr aria-colspan="a">  
+                    <td >
+                        <div></div>
+                    </td>
+                    <td>    
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/marcos.png" title="Marcos Acuña" alt="Marcos Acuña" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Marcos Acuña</a><br/>
+                                    <a class="edad">31 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/sevilla.png" title="Sevilla" alt="Sevilla" id="equipo"></a><br/>
+                        <a id="icoequipo">Sevilla</a>
+                    </td>
+                    <td >
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="jugadores/nicolast.png" title="Nicolás Tagliafico" alt="Nicolás Tagliafico" id="fotoid" >
+                                </td>
+                                <td>
+                                    <a id="nombreju">Nicolás Tagliafico</a><br/>
+                                    <a class="edad">30 años</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="fotonomequi">
+                        <a ><img src="equipos/lyon.png" title="Olympique de Lyon" alt="Olympique de Lyon" id="equipo"></a><br/>
+                        <a id="icoequipo">Lyon</a>
+                    </td>
+                        <td >
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="jugadores/juan.png" title="Juan Foyth" alt="Juan Foyth" id="fotoid" >
+                                    </td>
+                                    <td>
+                                        <a id="nombreju">Juan Foyth</a><br/>
+                                        <a class="edad">24 años</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="fotonomequi">
+                            <a ><img src="equipos/villa.png" title="Villarreal" alt="Villarreal" id="equipo"></a><br/>
+                            <a id="icoequipo">Villarreal</a>
+                        </td>
+                        <td >
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="jugadores/cristian.png" title="Cristian Romer" alt="Cristian Romer" id="fotoid" >
+                                    </td>
+                                    <td>
+                                        <a id="nombreju">Cristian Romero</a><br/>
+                                        <a class="edad"> 24 años</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="fotonomequi">
+                            <a ><img src="equipos/toten.png" title="Totenham" alt="Totenham" id="equipo"></a><br/>
+                            <a id="icoequipo">Totenham</a>
+                        </td>
+                    </tr>
+                </tr>
+            </tbody>
+        </table>    
+       
+    <!--MEDIOCAMPISTAS-->
+    
+    <table class="items">
+        <thead>
+            <tr>
+                <th colspan="100%"><h4>MEDIOCAMPISTAS</h4></th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/rodrigo.png" title="Rodrigo De Paul" alt="Rodrigo De Paul" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Rodrigo De Paul</a><br/>
+                                <a class="edad">28 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/atm.png" title="Atletico de Madrid" alt="Atletico de Madrid" id="equipo"></a><br/>
+                    <a id="icoequipo">Atletico Madrid</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/leandro.png" title="Leandro Paredes" alt="Leandro Paredes" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Leandro Paredes</a><br/>
+                                <a class="edad">28 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/juven.png" title="Juventus" alt="Juventus" id="equipo"></a><br/>
+                    <a id="icoequipo">Juventus</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/alexis.png" title="Alexis Mac Allister" alt="Alexis Mac Allister" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Alexis Mac Allister</a><br/>
+                                <a class="edad">23 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/bah.png" title="Brighton & Hove" alt="Brighton & Hove" id="equipo"></a><br/>
+                    <a id="icoequipo">Brighton</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/guido.png" title="Guido Rodríguez" alt="Guido Rodríguez" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Guido Rodríguez</a><br/>
+                                <a class="edad">28 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/betis.png" title="Real Betis" alt="Real Betis" id="equipo"></a><br/>
+                    <a id="icoequipo">Real Betis</a>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/alejandro.png" title="Alejandro Gómez" alt="Alejandro Gómez" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Alejandro Gómez</a><br/>
+                                <a class="edad">34 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/sevilla.png" title="Sevilla" alt="Sevilla" id="equipo"></a><br/>
+                    <a id="icoequipo">Sevilla</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/enzo.png" ttitle="Enzo Fernández" alt="Enzo Fernández" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju"> Enzo Fernández</a><br/>
+                                <a class="edad">22 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/chelsea.png" title="Chelsea" alt="Chelsea" id="equipo"></a><br/>
+                    <a id="icoequipo">Chelsea</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/exequiel.png" title="Exequiel Palacios" alt="Exequiel Palacios" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Exequiel Palacios</a><br/>
+                                <a class="edad">23 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/baylev.png" title="Bayer Leverkusen" alt="Bayer Leverkusen" id="equipo"></a><br/>
+                    <a id="icoequipo">Bayer Leverkusen</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/thiago.png" title="Thiago Almada" alt="Thiago Almada" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Thiago Almada</a><br/>
+                                <a class="edad">22 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/atlauni.png" title="Atlanta United" alt="Atlanta United" id="equipo"></a><br/>
+                    <a id="icoequipo">Atlanta United</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+    
+            <!--DELANTEROS-->
+    
+    <table class="items">
+        <thead>
+            <tr>
+                <th colspan="100%"><h4>DELANTEROS</h4></th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/angeld.png" title="Angel Di María" alt="Angel Di María" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Angel Di María</a><br/>
+                                <a class="edad">35 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/juven.png" title="Juventus" alt="Juventus" id="equipo"></a><br/>
+                    <a id="icoequipo">Juventus</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/lautaro.png" title="Lautaro Martinez" alt="Lautaro Martinez" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Lautaro Martinez</a><br/>
+                                <a class="edad">25 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/inter.png" title="Inter de Milan" alt="Inter de Milan" id="equipo"></a><br/>
+                    <a id="icoequipo">Inter</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/julian.png" title="Julián Álvarez" alt="Julián Álvarez" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Julián Álvarez</a><br/>
+                                <a class="edad">23 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/mci.png" title="Manchester City" alt="Manchester City" id="equipo"></a><br/>
+                    <a id="icoequipo">Manchester City</a>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/angelc.png" title="Angel Correa" alt="Angel Correa" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Angel Correa</a><br/>
+                                <a class="edad">28 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/atm.png" title="Atletico de Madrid" alt="Atletico de Madrid" id="equipo"></a><br/>
+                    <a id="icoequipo">Atletico Madrid</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/paulo.png" title="Paulo Dybala" alt="Paulo Dybala" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Paulo Dybala</a><br/>
+                                <a class="edad">29 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/roma.png" title="Roma" alt="Roma" id="equipo"></a><br/>
+                    <a id="icoequipo">Roma</a>
+                </td>
+                <td >
+                    <div></div>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="jugadores/lionelm.png" title="Lionel Messi" alt="Lionel Messi" id="fotoid" >
+                            </td>
+                            <td>
+                                <a id="nombreju">Lionel Messi</a><br/>
+                                <a class="edad">35 años</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="fotonomequi">
+                    <a ><img src="equipos/psg.png" title="Paris Saint-Germain" alt="Paris Saint-Germain" id="equipo"></a><br/>
+                    <a id="icoequipo">PSG</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+    
+    </body>
+
+ <!-- FOOTER -->
+
+<section id="pie">
+  <ul>
+    <li><b>©</b>Copyright</li>
+    <li>Autores: Digangi y Sepe </li>
+    <li class="redessociales">
+      <a href="https://twitter.com/afa" target="_blank" class="twitter"><img src="icored/twittwer.png" height="20px" width="20px"></a>
+      <a href="https://www.instagram.com/afaseleccion/" target="_blank" class="instagram"><img src="icored/instagram.png" height="20px" width="20px"></a>
+      <a href="https://www.facebook.com/AFASeleccionArgentina" target="_blank" class="facebook"><img src="icored/facebook.png" height="20px" width="20px"></a>
+    </li>
+  </ul>
+</section>
+
+</body>
+
+
+
+
+
+</html>
